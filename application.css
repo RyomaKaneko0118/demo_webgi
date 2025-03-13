@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.countinfinite {
+  animation-iteration-count: infinite;
+}
+
+.timing-ease-in {
+  animation-timing-function: ease-in;
+}
+
+.change-time5 {
+  animation-duration: 5s;
+}
+
+/*# sourceMappingURL=application.css.map */
